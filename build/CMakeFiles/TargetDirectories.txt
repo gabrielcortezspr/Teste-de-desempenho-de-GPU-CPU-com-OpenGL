@@ -1,0 +1,5 @@
+/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles/OpenGL_Performance_Test.dir
+/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles/PerformanceTest.dir
+/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles/AdvancedTest.dir
+/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles/edit_cache.dir
+/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles/rebuild_cache.dir

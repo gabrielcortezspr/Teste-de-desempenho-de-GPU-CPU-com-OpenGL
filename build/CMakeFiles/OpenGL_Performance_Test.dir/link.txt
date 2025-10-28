@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o CMakeFiles/OpenGL_Performance_Test.dir/src/Renderer.cpp.o CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.o -o OpenGL_Performance_Test  /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /usr/lib/x86_64-linux-gnu/libGLEW.so -lpthread 

@@ -1,5 +1,5 @@
-CMakeFiles/AdvancedTest.dir/src/advanced_test.cpp.o: \
- /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/advanced_test.cpp \
+CMakeFiles/DemoInterativo.dir/src/demo_interativo.cpp.o: \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/demo_interativo.cpp \
  /usr/include/stdc-predef.h /usr/include/GL/glew.h \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -186,7 +186,16 @@ CMakeFiles/AdvancedTest.dir/src/advanced_test.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/iomanip \
+ /usr/include/c++/13/locale \
+ /usr/include/c++/13/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/13/bits/locale_conv.h \
+ /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/sstream \
+ /usr/include/c++/13/bits/sstream.tcc \
  /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/AdvancedRenderer.h \
  /usr/include/c++/13/random /usr/include/c++/13/bits/random.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -368,7 +377,7 @@ CMakeFiles/AdvancedTest.dir/src/advanced_test.cpp.o: \
  /usr/include/glm/gtc/type_ptr.inl \
  /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Texture.h \
  /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.h \
- /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/c++/13/fstream \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc

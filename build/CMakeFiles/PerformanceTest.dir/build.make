@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/gabrielcortezspr/Documents/PDI 3"
+CMAKE_SOURCE_DIR = "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gabrielcortezspr/Documents/PDI 3/build"
+CMAKE_BINARY_DIR = "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PerformanceTest.dir/depend.make
@@ -70,46 +70,46 @@ include CMakeFiles/PerformanceTest.dir/progress.make
 include CMakeFiles/PerformanceTest.dir/flags.make
 
 CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o: CMakeFiles/PerformanceTest.dir/flags.make
-CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o: /home/gabrielcortezspr/Documents/PDI\ 3/src/performance_test.cpp
+CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o: /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/performance_test.cpp
 CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o: CMakeFiles/PerformanceTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o -MF CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o.d -o CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o -c "/home/gabrielcortezspr/Documents/PDI 3/src/performance_test.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o -MF CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o.d -o CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o -c "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/performance_test.cpp"
 
 CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gabrielcortezspr/Documents/PDI 3/src/performance_test.cpp" > CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/performance_test.cpp" > CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.i
 
 CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gabrielcortezspr/Documents/PDI 3/src/performance_test.cpp" -o CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/performance_test.cpp" -o CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.s
 
 CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o: CMakeFiles/PerformanceTest.dir/flags.make
-CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o: /home/gabrielcortezspr/Documents/PDI\ 3/src/MultiTriangleRenderer.cpp
+CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o: /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/MultiTriangleRenderer.cpp
 CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o: CMakeFiles/PerformanceTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o -MF CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o.d -o CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o -c "/home/gabrielcortezspr/Documents/PDI 3/src/MultiTriangleRenderer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o -MF CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o.d -o CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o -c "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/MultiTriangleRenderer.cpp"
 
 CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gabrielcortezspr/Documents/PDI 3/src/MultiTriangleRenderer.cpp" > CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/MultiTriangleRenderer.cpp" > CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.i
 
 CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gabrielcortezspr/Documents/PDI 3/src/MultiTriangleRenderer.cpp" -o CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/MultiTriangleRenderer.cpp" -o CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.s
 
 CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o: CMakeFiles/PerformanceTest.dir/flags.make
-CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o: /home/gabrielcortezspr/Documents/PDI\ 3/src/PerformanceMonitor.cpp
+CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o: /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp
 CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o: CMakeFiles/PerformanceTest.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o -MF CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o.d -o CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o -c "/home/gabrielcortezspr/Documents/PDI 3/src/PerformanceMonitor.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o -MF CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o.d -o CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o -c "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp"
 
 CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gabrielcortezspr/Documents/PDI 3/src/PerformanceMonitor.cpp" > CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp" > CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.i
 
 CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gabrielcortezspr/Documents/PDI 3/src/PerformanceMonitor.cpp" -o CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp" -o CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.s
 
 # Object files for target PerformanceTest
 PerformanceTest_OBJECTS = \
@@ -129,7 +129,7 @@ PerformanceTest: /usr/lib/x86_64-linux-gnu/libGLU.so
 PerformanceTest: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 PerformanceTest: /usr/lib/x86_64-linux-gnu/libGLEW.so
 PerformanceTest: CMakeFiles/PerformanceTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PerformanceTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PerformanceTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PerformanceTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -141,6 +141,6 @@ CMakeFiles/PerformanceTest.dir/clean:
 .PHONY : CMakeFiles/PerformanceTest.dir/clean
 
 CMakeFiles/PerformanceTest.dir/depend:
-	cd "/home/gabrielcortezspr/Documents/PDI 3/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/gabrielcortezspr/Documents/PDI 3" "/home/gabrielcortezspr/Documents/PDI 3" "/home/gabrielcortezspr/Documents/PDI 3/build" "/home/gabrielcortezspr/Documents/PDI 3/build" "/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles/PerformanceTest.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL" "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL" "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build" "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build" "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/PerformanceTest.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/PerformanceTest.dir/depend
 

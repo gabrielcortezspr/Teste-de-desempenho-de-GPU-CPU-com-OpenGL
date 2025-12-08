@@ -1,7 +1,7 @@
 CMakeFiles/AdvancedTest.dir/src/Texture.cpp.o: \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Texture.cpp \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Texture.cpp \
  /usr/include/stdc-predef.h \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Texture.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Texture.h \
  /usr/include/GL/glew.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

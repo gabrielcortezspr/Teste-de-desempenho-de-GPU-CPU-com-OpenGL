@@ -1,7 +1,7 @@
 CMakeFiles/AdvancedTest.dir/src/AdvancedRenderer.cpp.o: \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/AdvancedRenderer.cpp \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/AdvancedRenderer.cpp \
  /usr/include/stdc-predef.h \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/AdvancedRenderer.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/AdvancedRenderer.h \
  /usr/include/GL/glew.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -154,7 +154,7 @@ CMakeFiles/AdvancedTest.dir/src/AdvancedRenderer.cpp.o: \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Lighting.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Lighting.h \
  /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/c++/13/cassert \
  /usr/include/assert.h /usr/include/glm/simd/platform.h \
@@ -326,7 +326,7 @@ CMakeFiles/AdvancedTest.dir/src/AdvancedRenderer.cpp.o: \
  /usr/include/glm/ext/vector_uint1_sized.hpp /usr/include/c++/13/cstring \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/glm/gtc/type_ptr.inl \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Texture.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Texture.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/exception \
  /usr/include/c++/13/bits/exception_ptr.h \

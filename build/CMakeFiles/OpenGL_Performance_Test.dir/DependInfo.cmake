@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/gabrielcortezspr/Documents/PDI 3/src/PerformanceMonitor.cpp" "CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.o" "gcc" "CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.o.d"
-  "/home/gabrielcortezspr/Documents/PDI 3/src/Renderer.cpp" "CMakeFiles/OpenGL_Performance_Test.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/OpenGL_Performance_Test.dir/src/Renderer.cpp.o.d"
-  "/home/gabrielcortezspr/Documents/PDI 3/src/main.cpp" "CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o.d"
+  "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp" "CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.o" "gcc" "CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.o.d"
+  "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Renderer.cpp" "CMakeFiles/OpenGL_Performance_Test.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/OpenGL_Performance_Test.dir/src/Renderer.cpp.o.d"
+  "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/main.cpp" "CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o" "gcc" "CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

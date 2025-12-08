@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/gabrielcortezspr/Documents/PDI 3"
+CMAKE_SOURCE_DIR = "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/gabrielcortezspr/Documents/PDI 3/build"
+CMAKE_BINARY_DIR = "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles" "/home/gabrielcortezspr/Documents/PDI 3/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles" "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabrielcortezspr/Documents/PDI 3/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -155,12 +155,26 @@ AdvancedTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/build
 .PHONY : AdvancedTest/fast
 
+#=============================================================================
+# Target rules for targets named DemoInterativo
+
+# Build rule for target.
+DemoInterativo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DemoInterativo
+.PHONY : DemoInterativo
+
+# fast build rule for target.
+DemoInterativo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/build
+.PHONY : DemoInterativo/fast
+
 src/AdvancedRenderer.o: src/AdvancedRenderer.cpp.o
 .PHONY : src/AdvancedRenderer.o
 
 # target to build an object file
 src/AdvancedRenderer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/AdvancedRenderer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/AdvancedRenderer.cpp.o
 .PHONY : src/AdvancedRenderer.cpp.o
 
 src/AdvancedRenderer.i: src/AdvancedRenderer.cpp.i
@@ -169,6 +183,7 @@ src/AdvancedRenderer.i: src/AdvancedRenderer.cpp.i
 # target to preprocess a source file
 src/AdvancedRenderer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/AdvancedRenderer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/AdvancedRenderer.cpp.i
 .PHONY : src/AdvancedRenderer.cpp.i
 
 src/AdvancedRenderer.s: src/AdvancedRenderer.cpp.s
@@ -177,6 +192,7 @@ src/AdvancedRenderer.s: src/AdvancedRenderer.cpp.s
 # target to generate assembly for a file
 src/AdvancedRenderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/AdvancedRenderer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/AdvancedRenderer.cpp.s
 .PHONY : src/AdvancedRenderer.cpp.s
 
 src/Lighting.o: src/Lighting.cpp.o
@@ -185,6 +201,7 @@ src/Lighting.o: src/Lighting.cpp.o
 # target to build an object file
 src/Lighting.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/Lighting.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/Lighting.cpp.o
 .PHONY : src/Lighting.cpp.o
 
 src/Lighting.i: src/Lighting.cpp.i
@@ -193,6 +210,7 @@ src/Lighting.i: src/Lighting.cpp.i
 # target to preprocess a source file
 src/Lighting.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/Lighting.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/Lighting.cpp.i
 .PHONY : src/Lighting.cpp.i
 
 src/Lighting.s: src/Lighting.cpp.s
@@ -201,6 +219,7 @@ src/Lighting.s: src/Lighting.cpp.s
 # target to generate assembly for a file
 src/Lighting.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/Lighting.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/Lighting.cpp.s
 .PHONY : src/Lighting.cpp.s
 
 src/MultiTriangleRenderer.o: src/MultiTriangleRenderer.cpp.o
@@ -235,6 +254,7 @@ src/PerformanceMonitor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_Performance_Test.dir/build.make CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PerformanceTest.dir/build.make CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/PerformanceMonitor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/PerformanceMonitor.cpp.o
 .PHONY : src/PerformanceMonitor.cpp.o
 
 src/PerformanceMonitor.i: src/PerformanceMonitor.cpp.i
@@ -245,6 +265,7 @@ src/PerformanceMonitor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_Performance_Test.dir/build.make CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PerformanceTest.dir/build.make CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/PerformanceMonitor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/PerformanceMonitor.cpp.i
 .PHONY : src/PerformanceMonitor.cpp.i
 
 src/PerformanceMonitor.s: src/PerformanceMonitor.cpp.s
@@ -255,6 +276,7 @@ src/PerformanceMonitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OpenGL_Performance_Test.dir/build.make CMakeFiles/OpenGL_Performance_Test.dir/src/PerformanceMonitor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PerformanceTest.dir/build.make CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/PerformanceMonitor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/PerformanceMonitor.cpp.s
 .PHONY : src/PerformanceMonitor.cpp.s
 
 src/Renderer.o: src/Renderer.cpp.o
@@ -287,6 +309,7 @@ src/Texture.o: src/Texture.cpp.o
 # target to build an object file
 src/Texture.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/Texture.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/Texture.cpp.o
 .PHONY : src/Texture.cpp.o
 
 src/Texture.i: src/Texture.cpp.i
@@ -295,6 +318,7 @@ src/Texture.i: src/Texture.cpp.i
 # target to preprocess a source file
 src/Texture.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/Texture.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/Texture.cpp.i
 .PHONY : src/Texture.cpp.i
 
 src/Texture.s: src/Texture.cpp.s
@@ -303,6 +327,7 @@ src/Texture.s: src/Texture.cpp.s
 # target to generate assembly for a file
 src/Texture.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/Texture.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/Texture.cpp.s
 .PHONY : src/Texture.cpp.s
 
 src/advanced_test.o: src/advanced_test.cpp.o
@@ -328,6 +353,30 @@ src/advanced_test.s: src/advanced_test.cpp.s
 src/advanced_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/AdvancedTest.dir/build.make CMakeFiles/AdvancedTest.dir/src/advanced_test.cpp.s
 .PHONY : src/advanced_test.cpp.s
+
+src/demo_interativo.o: src/demo_interativo.cpp.o
+.PHONY : src/demo_interativo.o
+
+# target to build an object file
+src/demo_interativo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/demo_interativo.cpp.o
+.PHONY : src/demo_interativo.cpp.o
+
+src/demo_interativo.i: src/demo_interativo.cpp.i
+.PHONY : src/demo_interativo.i
+
+# target to preprocess a source file
+src/demo_interativo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/demo_interativo.cpp.i
+.PHONY : src/demo_interativo.cpp.i
+
+src/demo_interativo.s: src/demo_interativo.cpp.s
+.PHONY : src/demo_interativo.s
+
+# target to generate assembly for a file
+src/demo_interativo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DemoInterativo.dir/build.make CMakeFiles/DemoInterativo.dir/src/demo_interativo.cpp.s
+.PHONY : src/demo_interativo.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -386,6 +435,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... AdvancedTest"
+	@echo "... DemoInterativo"
 	@echo "... OpenGL_Performance_Test"
 	@echo "... PerformanceTest"
 	@echo "... src/AdvancedRenderer.o"
@@ -409,6 +459,9 @@ help:
 	@echo "... src/advanced_test.o"
 	@echo "... src/advanced_test.i"
 	@echo "... src/advanced_test.s"
+	@echo "... src/demo_interativo.o"
+	@echo "... src/demo_interativo.i"
+	@echo "... src/demo_interativo.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

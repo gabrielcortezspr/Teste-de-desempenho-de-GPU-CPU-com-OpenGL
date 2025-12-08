@@ -1,5 +1,5 @@
 CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o: \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/main.cpp \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/main.cpp \
  /usr/include/stdc-predef.h /usr/include/GL/glew.h \
  /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -187,8 +187,8 @@ CMakeFiles/OpenGL_Performance_Test.dir/src/main.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Renderer.h \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/PerformanceMonitor.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Renderer.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.h \
  /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \

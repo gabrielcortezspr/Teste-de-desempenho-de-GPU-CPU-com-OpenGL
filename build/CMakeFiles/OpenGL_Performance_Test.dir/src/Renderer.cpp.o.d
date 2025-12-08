@@ -1,7 +1,7 @@
 CMakeFiles/OpenGL_Performance_Test.dir/src/Renderer.cpp.o: \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Renderer.cpp \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Renderer.cpp \
  /usr/include/stdc-predef.h \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Renderer.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Renderer.h \
  /usr/include/GL/glew.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

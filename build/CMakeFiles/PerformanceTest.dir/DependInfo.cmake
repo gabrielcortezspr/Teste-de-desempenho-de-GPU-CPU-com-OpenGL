@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/gabrielcortezspr/Documents/PDI 3/src/MultiTriangleRenderer.cpp" "CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o" "gcc" "CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o.d"
-  "/home/gabrielcortezspr/Documents/PDI 3/src/PerformanceMonitor.cpp" "CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o" "gcc" "CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o.d"
-  "/home/gabrielcortezspr/Documents/PDI 3/src/performance_test.cpp" "CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o" "gcc" "CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o.d"
+  "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/MultiTriangleRenderer.cpp" "CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o" "gcc" "CMakeFiles/PerformanceTest.dir/src/MultiTriangleRenderer.cpp.o.d"
+  "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp" "CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o" "gcc" "CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o.d"
+  "/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/performance_test.cpp" "CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o" "gcc" "CMakeFiles/PerformanceTest.dir/src/performance_test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

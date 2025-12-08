@@ -1,7 +1,7 @@
 CMakeFiles/AdvancedTest.dir/src/Lighting.cpp.o: \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Lighting.cpp \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Lighting.cpp \
  /usr/include/stdc-predef.h \
- /home/gabrielcortezspr/Documents/PDI\ 3/src/Lighting.h \
+ /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/Lighting.h \
  /usr/include/GL/glew.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

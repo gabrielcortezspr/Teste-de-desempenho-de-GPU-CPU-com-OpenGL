@@ -1,4 +1,4 @@
-CMakeFiles/PerformanceTest.dir/src/PerformanceMonitor.cpp.o: \
+CMakeFiles/DemoInterativo.dir/src/PerformanceMonitor.cpp.o: \
  /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.cpp \
  /usr/include/stdc-predef.h \
  /home/gabrielcortezspr/Documents/PDI\ 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/src/PerformanceMonitor.h \

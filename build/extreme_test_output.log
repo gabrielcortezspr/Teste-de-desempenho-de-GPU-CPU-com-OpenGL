@@ -1,0 +1,48 @@
+=== TESTE EXTREMO DE PERFORMANCE ===
+Este teste usa passos de 10.000 triângulos!
+Variando de 10.000 até 100.000 triângulos
+⚠️  AVISO: Este teste é PESADO e pode deixar o sistema lento!
+
+OpenGL Version: 4.6 (Core Profile) Mesa 25.0.7-0ubuntu0.24.04.2
+GPU: Mesa Intel(R) Iris(R) Xe Graphics (RPL-U)
+Vendor: Intel
+Programa de shader de iluminação criado com sucesso!
+Luz omnidirecional adicionada na posição (0, 0, 2)
+Spotlight adicionada na posição (0, 1, 1)
+Sistema de iluminação inicializado com 2 luzes
+Textura procedural gerada: 256x256
+AdvancedRenderer inicializado com sucesso!
+Triângulos avançados configurados: 10000
+
+=== Informações do Sistema ===
+CPU: 13th Gen Intel(R) Core(TM) i7-1355U
+GPU: 00:02.0 VGA compatible controller: Intel Corporation Raptor Lake-P [Iris Xe Graphics] (rev 04)
+Núcleos CPU: 12
+===============================
+
+Controles:
+ESPAÇO - Iniciar teste extremo automático
+ESC - Sair
+
+Pressione ESPAÇO para iniciar...
+
+FPS: 56.6644 | Triângulos: 10000
+FPS: 60.0677 | Triângulos: 10000
+bash: line 4: xdotool: command not found
+FPS: 59.4513 | Triângulos: 10000
+FPS: 60.0479 | Triângulos: 10000
+FPS: 59.9414 | Triângulos: 10000
+FPS: 59.8988 | Triângulos: 10000
+FPS: 60.1096 | Triângulos: 10000
+FPS: 59.9541 | Triângulos: 10000
+FPS: 59.9915 | Triângulos: 10000
+FPS: 58.2375 | Triângulos: 10000
+FPS: 40.0042 | Triângulos: 10000
+FPS: 6.66354 | Triângulos: 10000
+FPS: 42.8265 | Triângulos: 10000
+FPS: 35.895 | Triângulos: 10000
+FPS: 13.9507 | Triângulos: 10000
+FPS: 60.0867 | Triângulos: 10000
+FPS: 59.9324 | Triângulos: 10000
+
+Teste extremo finalizado!

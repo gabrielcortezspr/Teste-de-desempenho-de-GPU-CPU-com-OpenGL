@@ -26,8 +26,9 @@ private:
     const char* vertexShaderSource = R"(
         #version 330 core
         layout (location = 0) in vec3 aPos;
-        layout (location = 1) in vec3 aNormal;
-        layout (location = 2) in vec2 aTexCoord;
+        layout (location = 1) in vec3 aColor;
+        layout (location = 2) in vec3 aNormal;
+        layout (location = 3) in vec2 aTexCoord;
         
         uniform mat4 model;
         uniform mat4 view;
@@ -35,11 +36,13 @@ private:
         uniform mat4 transform;
         
         out vec3 FragPos;
+        out vec3 VertexColor;
         out vec3 Normal;
         out vec2 TexCoord;
         
         void main() {
             FragPos = vec3(model * vec4(aPos, 1.0));
+            VertexColor = aColor;
             Normal = mat3(transpose(inverse(model))) * aNormal;
             TexCoord = aTexCoord;
             
@@ -58,6 +61,7 @@ private:
         };
         
         in vec3 FragPos;
+        in vec3 VertexColor;
         in vec3 Normal;
         in vec2 TexCoord;
         
@@ -89,16 +93,20 @@ private:
             
             return diffuse + specular;
         }
-        
         void main() {
             vec3 normal = normalize(Normal);
             vec3 viewDir = normalize(viewPos - FragPos);
             
-            vec3 result = vec3(0.1); // Luz ambiente
+            // Usar cor do vértice como base
+            vec3 baseColor = VertexColor;
+            
+            // Luz ambiente mais forte
+            vec3 ambient = vec3(0.6, 0.6, 0.7);
+            vec3 result = ambient * baseColor;
             
             // Calcular todas as luzes
             for (int i = 0; i < numLights; i++) {
-                result += calculateLight(lights[i], normal, FragPos, viewDir);
+                result += calculateLight(lights[i], normal, FragPos, viewDir) * baseColor;
             }
             
             if (useTexture) {

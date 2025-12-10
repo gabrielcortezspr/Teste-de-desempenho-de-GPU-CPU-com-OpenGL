@@ -38,16 +38,20 @@ bool AdvancedRenderer::initialize() {
 
     // Configurar atributos de vértice
     // Atributo de posição (location = 0)
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    // Atributo de normal (location = 1)
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
+    // Atributo de cor (location = 1)
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    // Atributo de coordenada de textura (location = 2)
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
+    // Atributo de normal (location = 2)
+    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
+
+    // Atributo de coordenada de textura (location = 3)
+    glVertexAttribPointer(3, 2, GL_FLOAT, GL_FALSE, 11 * sizeof(float), (void*)(9 * sizeof(float)));
+    glEnableVertexAttribArray(3);
 
     // Desvincular VAO
     glBindVertexArray(0);
@@ -66,13 +70,16 @@ void AdvancedRenderer::setTriangleCount(int count) {
     
     // Criar dados de vértices para todos os triângulos
     std::vector<float> vertices;
-    vertices.reserve(count * 24); // 8 floats por vértice, 3 vértices por triângulo
+    vertices.reserve(count * 33); // 11 floats por vértice, 3 vértices por triângulo
     
     for (const auto& triangle : triangles) {
         // Vértice 1 (topo)
         vertices.push_back(triangle.x);
         vertices.push_back(triangle.y + 0.1f);
         vertices.push_back(triangle.z);
+        vertices.push_back(triangle.r);
+        vertices.push_back(triangle.g);
+        vertices.push_back(triangle.b);
         vertices.push_back(triangle.nx);
         vertices.push_back(triangle.ny);
         vertices.push_back(triangle.nz);
@@ -83,6 +90,9 @@ void AdvancedRenderer::setTriangleCount(int count) {
         vertices.push_back(triangle.x - 0.1f);
         vertices.push_back(triangle.y - 0.1f);
         vertices.push_back(triangle.z);
+        vertices.push_back(triangle.r);
+        vertices.push_back(triangle.g);
+        vertices.push_back(triangle.b);
         vertices.push_back(triangle.nx);
         vertices.push_back(triangle.ny);
         vertices.push_back(triangle.nz);
@@ -93,6 +103,9 @@ void AdvancedRenderer::setTriangleCount(int count) {
         vertices.push_back(triangle.x + 0.1f);
         vertices.push_back(triangle.y - 0.1f);
         vertices.push_back(triangle.z);
+        vertices.push_back(triangle.r);
+        vertices.push_back(triangle.g);
+        vertices.push_back(triangle.b);
         vertices.push_back(triangle.nx);
         vertices.push_back(triangle.ny);
         vertices.push_back(triangle.nz);
@@ -116,6 +129,8 @@ void AdvancedRenderer::setTexturesEnabled(bool enabled) {
 }
 
 void AdvancedRenderer::render(float deltaTime) {
+    glBindVertexArray(VAO);
+    
     if (useLighting) {
         lighting->useShader();
         lighting->setViewPosition(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -142,38 +157,77 @@ void AdvancedRenderer::render(float deltaTime) {
         if (useTextures) {
             texture->bind(GL_TEXTURE0);
         }
-    }
-    
-    glBindVertexArray(VAO);
-    
-    // Renderizar cada triângulo com sua própria rotação
-    for (size_t i = 0; i < triangles.size(); ++i) {
-        AdvancedTriangle& triangle = triangles[i];
         
-        // Atualizar rotação
-        triangle.currentRotation += triangle.rotationSpeed * deltaTime;
-        if (triangle.currentRotation > 2 * M_PI) {
-            triangle.currentRotation = 0.0f;
-        }
-        
-        // Criar matriz de transformação
-        float cosA = cos(triangle.currentRotation);
-        float sinA = sin(triangle.currentRotation);
-        
-        glm::mat4 transform = glm::mat4(1.0f);
-        transform = glm::translate(transform, glm::vec3(triangle.x, triangle.y, triangle.z));
-        transform = glm::rotate(transform, triangle.currentRotation, glm::vec3(0.0f, 0.0f, 1.0f));
-        
-        if (useLighting) {
+        // Renderizar cada triângulo com iluminação
+        for (size_t i = 0; i < triangles.size(); ++i) {
+            AdvancedTriangle& triangle = triangles[i];
+            
+            // Atualizar rotação
+            triangle.currentRotation += triangle.rotationSpeed * deltaTime;
+            if (triangle.currentRotation > 2 * M_PI) {
+                triangle.currentRotation = 0.0f;
+            }
+            
+            glm::mat4 transform = glm::mat4(1.0f);
+            transform = glm::translate(transform, glm::vec3(triangle.x, triangle.y, triangle.z));
+            transform = glm::rotate(transform, triangle.currentRotation, glm::vec3(0.0f, 0.0f, 1.0f));
+            
             GLint transformLoc = glGetUniformLocation(lighting->getShaderProgram(), "transform");
             glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
             
             GLint modelLoc = glGetUniformLocation(lighting->getShaderProgram(), "model");
             glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(transform));
+            
+            // Desenhar triângulo
+            glDrawArrays(GL_TRIANGLES, i * 3, 3);
         }
+    } else {
+        // Renderização simples sem iluminação (similar ao MultiTriangleRenderer)
+        // Criar um shader simples se não tiver iluminação
+        // Por enquanto, vamos usar o shader de iluminação mesmo assim, mas sem as luzes ativas
+        lighting->useShader();
         
-        // Desenhar triângulo
-        glDrawArrays(GL_TRIANGLES, i * 3, 3);
+        // Configurar para não usar texturas nem iluminação
+        GLint useTextureLoc = glGetUniformLocation(lighting->getShaderProgram(), "useTexture");
+        glUniform1i(useTextureLoc, 0);
+        
+        GLint numLightsLoc = glGetUniformLocation(lighting->getShaderProgram(), "numLights");
+        glUniform1i(numLightsLoc, 0); // Sem luzes
+        
+        // Matrizes de visualização
+        GLint viewLoc = glGetUniformLocation(lighting->getShaderProgram(), "view");
+        glm::mat4 view = glm::lookAt(glm::vec3(0.0f, 0.0f, 3.0f), 
+                                   glm::vec3(0.0f, 0.0f, 0.0f), 
+                                   glm::vec3(0.0f, 1.0f, 0.0f));
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+        
+        GLint projLoc = glGetUniformLocation(lighting->getShaderProgram(), "projection");
+        glm::mat4 projection = glm::perspective(glm::radians(45.0f), 1024.0f/768.0f, 0.1f, 100.0f);
+        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+        
+        // Renderizar cada triângulo
+        for (size_t i = 0; i < triangles.size(); ++i) {
+            AdvancedTriangle& triangle = triangles[i];
+            
+            // Atualizar rotação
+            triangle.currentRotation += triangle.rotationSpeed * deltaTime;
+            if (triangle.currentRotation > 2 * M_PI) {
+                triangle.currentRotation = 0.0f;
+            }
+            
+            glm::mat4 transform = glm::mat4(1.0f);
+            transform = glm::translate(transform, glm::vec3(triangle.x, triangle.y, triangle.z));
+            transform = glm::rotate(transform, triangle.currentRotation, glm::vec3(0.0f, 0.0f, 1.0f));
+            
+            GLint transformLoc = glGetUniformLocation(lighting->getShaderProgram(), "transform");
+            glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(transform));
+            
+            GLint modelLoc = glGetUniformLocation(lighting->getShaderProgram(), "model");
+            glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(transform));
+            
+            // Desenhar triângulo
+            glDrawArrays(GL_TRIANGLES, i * 3, 3);
+        }
     }
     
     glBindVertexArray(0);
@@ -184,6 +238,7 @@ void AdvancedRenderer::generateTriangles(int count) {
     triangles.reserve(count);
     
     std::uniform_real_distribution<float> posDist(-0.8f, 0.8f);
+    std::uniform_real_distribution<float> colorDist(0.5f, 1.0f);
     std::uniform_real_distribution<float> speedDist(0.5f, 2.0f);
     
     for (int i = 0; i < count; ++i) {
@@ -191,6 +246,9 @@ void AdvancedRenderer::generateTriangles(int count) {
         triangle.x = posDist(rng);
         triangle.y = posDist(rng);
         triangle.z = 0.0f;
+        triangle.r = colorDist(rng);
+        triangle.g = colorDist(rng);
+        triangle.b = colorDist(rng);
         triangle.nx = 0.0f;
         triangle.ny = 0.0f;
         triangle.nz = 1.0f;

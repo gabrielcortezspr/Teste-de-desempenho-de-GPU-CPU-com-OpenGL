@@ -2,5 +2,6 @@
 /home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/PerformanceTest.dir
 /home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/AdvancedTest.dir
 /home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/DemoInterativo.dir
+/home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/ExtremeTest.dir
 /home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/edit_cache.dir
 /home/gabrielcortezspr/Documents/PDI 3/Teste-de-desempenho-de-GPU-CPU-com-OpenGL/build/CMakeFiles/rebuild_cache.dir

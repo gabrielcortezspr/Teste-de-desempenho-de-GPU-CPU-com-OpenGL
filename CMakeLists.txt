@@ -38,10 +38,30 @@ set(ADVANCED_SOURCES
     src/PerformanceMonitor.cpp
 )
 
+# Source files for interactive demo
+set(DEMO_SOURCES
+    src/demo_interativo.cpp
+    src/AdvancedRenderer.cpp
+    src/Lighting.cpp
+    src/Texture.cpp
+    src/PerformanceMonitor.cpp
+)
+
+# Source files for extreme test (10k steps)
+set(EXTREME_SOURCES
+    src/extreme_test.cpp
+    src/AdvancedRenderer.cpp
+    src/Lighting.cpp
+    src/Texture.cpp
+    src/PerformanceMonitor.cpp
+)
+
 # Create executables
 add_executable(${PROJECT_NAME} ${BASIC_SOURCES})
 add_executable(PerformanceTest ${PERF_SOURCES})
 add_executable(AdvancedTest ${ADVANCED_SOURCES})
+add_executable(DemoInterativo ${DEMO_SOURCES})
+add_executable(ExtremeTest ${EXTREME_SOURCES})
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME} 
@@ -59,6 +79,20 @@ target_link_libraries(PerformanceTest
 )
 
 target_link_libraries(AdvancedTest 
+    ${OPENGL_LIBRARIES}
+    glfw
+    GLEW::GLEW
+    pthread
+)
+
+target_link_libraries(DemoInterativo 
+    ${OPENGL_LIBRARIES}
+    glfw
+    GLEW::GLEW
+    pthread
+)
+
+target_link_libraries(ExtremeTest 
     ${OPENGL_LIBRARIES}
     glfw
     GLEW::GLEW

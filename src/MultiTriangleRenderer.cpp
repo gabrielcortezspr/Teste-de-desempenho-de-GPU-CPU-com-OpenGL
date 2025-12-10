@@ -127,7 +127,7 @@ void MultiTriangleRenderer::generateTriangles(int count) {
     triangles.reserve(count);
     
     std::uniform_real_distribution<float> posDist(-0.8f, 0.8f);
-    std::uniform_real_distribution<float> colorDist(0.2f, 1.0f);
+    std::uniform_real_distribution<float> colorDist(0.5f, 1.0f);
     std::uniform_real_distribution<float> speedDist(0.5f, 2.0f);
     
     for (int i = 0; i < count; ++i) {

@@ -214,8 +214,8 @@ void renderLoop() {
         double deltaTime = currentFrameTime - lastFrameTime;
         lastFrameTime = currentFrameTime;
         
-        // Limpar buffer
-        glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+        // Limpar buffer com fundo mais claro
+        glClearColor(0.15f, 0.15f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Renderizar triângulos

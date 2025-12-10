@@ -10,6 +10,7 @@
 
 struct AdvancedTriangle {
     float x, y, z;
+    float r, g, b;     // Cor
     float nx, ny, nz;  // Normais
     float u, v;        // Coordenadas de textura
     float rotationSpeed;

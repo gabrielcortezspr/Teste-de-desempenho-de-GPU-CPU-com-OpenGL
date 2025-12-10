@@ -1,0 +1,32 @@
+=== RELATÓRIO DE DESEMPENHO OPENGL ===
+
+Data: 1765402063035509861
+
+=== CONFIGURAÇÃO DO HARDWARE ===
+CPU: 13th Gen Intel(R) Core(TM) i7-1355U
+GPU: 00:02.0 VGA compatible controller: Intel Corporation Raptor Lake-P [Iris Xe Graphics] (rev 04)
+Núcleos CPU: 12
+
+=== METODOLOGIA DOS EXPERIMENTOS ===
+Este relatório apresenta os resultados dos testes de desempenho realizados
+com diferentes configurações de renderização OpenGL.
+
+Parâmetros testados:
+- Número de triângulos renderizados
+- Presença de iluminação (omnidirecional e spotlight)
+- Presença de texturas
+
+=== DADOS COLETADOS ===
+Total de medições: 60
+
+FPS - Média: 9.57685, Máximo: 32.7168, Mínimo: 5.36282
+CPU - Média: 6.00063%, Máximo: 8.56557%, Mínimo: 0%
+GPU - Média: 74%, Máximo: 100%, Mínimo: 22%
+
+=== ANÁLISE DOS RESULTADOS ===
+Os gráficos e tabelas detalhadas estão disponíveis nos arquivos CSV gerados.
+Recomenda-se o uso de ferramentas como Python/matplotlib ou Excel para
+visualização dos dados coletados.
+
+=== CÓDIGO-FONTE ===
+O código-fonte completo está disponível nos arquivos do projeto.

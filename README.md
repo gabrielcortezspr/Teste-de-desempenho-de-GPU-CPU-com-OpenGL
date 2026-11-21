@@ -2,6 +2,8 @@
 
 Este projeto implementa um teste completo de desempenho GPU/CPU usando OpenGL, conforme requisitos da disciplina PDI 3.
 
+![Análise do teste extremo](reports/extreme_performance_analysis.png)
+
 ## Objetivo
 
 Desenvolver um sistema de teste de desempenho que:
@@ -14,7 +16,7 @@ Desenvolver um sistema de teste de desempenho que:
 ## Estrutura do Projeto
 
 ```
-PDI 3/
+Teste-de-desempenho-de-GPU-CPU-com-OpenGL/
 ├── src/                          # Código fonte C++
 │   ├── main.cpp                  # Programa básico (triângulo único)
 │   ├── demo_interativo.cpp       # 🎮 DEMO INTERATIVA (Principal!)
@@ -30,13 +32,11 @@ PDI 3/
 │   └── analyze_data.py          # Análise de dados e geração de gráficos
 ├── data/                         # Dados coletados (CSV)
 ├── reports/                      # Relatórios e gráficos gerados
-├── build/                        # Arquivos de compilação e executáveis
+├── docs/                         # Relatório final, resumo e guia de apresentação
 ├── CMakeLists.txt               # Configuração CMake
 ├── setup.sh                     # Script de instalação de dependências
 ├── demo.sh                      # 🚀 Script de lançamento da demo
-├── README.md                    # Este arquivo
-├── resumo.md                    # Resumo técnico do projeto
-└── GUIA_APRESENTACAO.md         # Guia para apresentação
+└── README.md                    # Este arquivo
 ```
 
 ## Instalação e Compilação
@@ -246,7 +246,7 @@ pkg-config --cflags --libs glew
    - Alterne rapidamente entre modos `1`, `2`, `3`, `4`
    - Mostre diferença de performance no console
 
-📖 **Guia completo:** Veja `GUIA_APRESENTACAO.md` para roteiro detalhado de 5-6 minutos
+📖 **Guia completo:** Veja [`docs/GUIA_APRESENTACAO.md`](docs/GUIA_APRESENTACAO.md) para roteiro detalhado de 5-6 minutos
 
 ## Possíveis Melhorias Futuras
 
@@ -261,9 +261,9 @@ pkg-config --cflags --libs glew
    - Post-processing effects
 ## 📚 Documentação Adicional
 
-- **`resumo.md`** - Resumo técnico completo do projeto
-- **`GUIA_APRESENTACAO.md`** - Roteiro detalhado para apresentação
-- **`RELATORIO_FINAL_COMPLETO.md`** - Relatório técnico completo
+- **[`docs/resumo.md`](docs/resumo.md)** - Resumo técnico completo do projeto
+- **[`docs/GUIA_APRESENTACAO.md`](docs/GUIA_APRESENTACAO.md)** - Roteiro detalhado para apresentação
+- **[`docs/RELATORIO_FINAL_COMPLETO.md`](docs/RELATORIO_FINAL_COMPLETO.md)** - Relatório técnico completo
 - **`data/`** - Dados coletados em formato CSV
 - **`reports/`** - Gráficos e análises geradas
 
@@ -325,3 +325,7 @@ Este projeto é desenvolvido para fins acadêmicos na disciplina PDI 3.
 Desenvolvido por: [Seu Nome]
 Disciplina: PDI 3 - Processamento Digital de Imagens
 Instituição: [Nome da Instituição]
+
+## Licença
+
+[MIT](LICENSE)

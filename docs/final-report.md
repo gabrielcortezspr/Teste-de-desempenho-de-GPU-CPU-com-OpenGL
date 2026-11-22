@@ -332,7 +332,7 @@ O sistema detecta automaticamente:
 
 **Execução Automática:**
 ```bash
-./extreme_test.sh
+./scripts/extreme-test.sh
 # 1. Compila se necessário
 # 2. Executa ExtremeTest (pressionar ESPAÇO)
 # 3. Coleta dados automaticamente
@@ -576,7 +576,7 @@ PDI 3/
 - **analyze_data.py** - Gera gráficos testes básicos
 - **analyze_extreme_data.py** - Gera gráficos teste extremo ⭐ **NOVO**
 - **test.sh** - Executa teste rápido completo
-- **extreme_test.sh** - Executa teste extremo automático ⭐ **NOVO**
+- **scripts/extreme-test.sh** - Executa teste extremo automático ⭐ **NOVO**
 - **setup.sh** - Instala dependências automaticamente
 
 ---
@@ -618,10 +618,10 @@ python3 scripts/analyze_extreme_data.py data/extreme_performance_data.csv
 ### Testes Automatizados
 ```bash
 # Teste rápido completo
-./test.sh
+./scripts/test.sh
 
 # ⭐ NOVO - Teste extremo completo (automático)
-./extreme_test.sh
+./scripts/extreme-test.sh
 # Gera dados, gráficos e relatórios automaticamente
 ```
 
@@ -672,7 +672,7 @@ python3 scripts/analyze_extreme_data.py data/extreme_performance_data.csv
 ### Código-Fonte Completo
 - `src/extreme_test.cpp` - ⭐ Programa de teste extremo
 - `scripts/analyze_extreme_data.py` - ⭐ Análise Python para teste extremo
-- `extreme_test.sh` - ⭐ Script automatizado de teste extremo
+- `scripts/extreme-test.sh` - ⭐ Script automatizado de teste extremo
 - Todo código-fonte adicional em `src/`
 
 ---

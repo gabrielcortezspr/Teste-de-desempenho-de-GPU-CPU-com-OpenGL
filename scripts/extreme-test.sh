@@ -29,7 +29,7 @@ echo "     - reports/extreme_performance_analysis.png (gráficos)"
 echo ""
 read -p "Pressione ENTER para continuar ou Ctrl+C para cancelar..."
 
-cd "$(dirname "$0")/build"
+cd "$(dirname "$0")/../build"
 
 if [ ! -f "./ExtremeTest" ]; then
     echo "Erro: ExtremeTest não encontrado. Compilando..."

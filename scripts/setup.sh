@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "$0")/.." || exit 1  # run from the repository root
 
 # Script de instalação e build do projeto OpenGL Performance Test
 # Para Ubuntu/Debian
@@ -17,6 +18,7 @@ sudo apt install -y \
     build-essential \
     cmake \
     libglfw3-dev \
+    libglm-dev \
     libglew-dev \
     libgl1-mesa-dev \
     mesa-utils \

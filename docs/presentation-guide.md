@@ -4,7 +4,7 @@
 
 ### Opção 1: Script Automático
 ```bash
-./demo.sh
+./scripts/demo.sh
 ```
 
 ### Opção 2: Direto

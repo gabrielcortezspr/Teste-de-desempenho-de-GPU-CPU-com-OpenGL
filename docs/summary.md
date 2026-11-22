@@ -317,7 +317,7 @@ python3 scripts/analyze_data.py data/advanced_performance_data.csv
 
 ### Teste Completo Automatizado
 ```bash
-./test.sh
+./scripts/test.sh
 ```
 
 ---

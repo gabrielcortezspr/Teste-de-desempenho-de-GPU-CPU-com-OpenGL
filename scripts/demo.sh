@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "$0")/.." || exit 1  # run from the repository root
 
 # Script de demonstração do projeto OpenGL Performance Test
 # Este script facilita a execução do programa interativo

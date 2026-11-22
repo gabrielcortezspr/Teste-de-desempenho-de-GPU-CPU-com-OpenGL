@@ -21,7 +21,7 @@ Este teste extremo coleta dados **reais** de performance do OpenGL variando de *
 ### Opção 1: Script Automatizado (Recomendado)
 
 ```bash
-./extreme_test.sh
+./scripts/extreme-test.sh
 ```
 
 Instruções:
@@ -126,5 +126,5 @@ Para incorporar estes resultados no relatório final:
 # - data/extreme_performance_data.csv
 # - reports/extreme_performance_analysis.png
 
-# Use estes arquivos para atualizar RELATORIO_FINAL_COMPLETO.md
+# Use estes arquivos para atualizar final-report.md
 ```
